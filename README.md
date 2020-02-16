@@ -1,11 +1,11 @@
 # Discord Bot Applications
 
-    This discord bot will allow you to approve and deny applications. It was created for FiveM a portuguese RP server => HargusRP (https://discord.gg/f6XPw72). 
-    If you want you can change it and adapt it to do whatever you want with it.
+This discord bot will allow you to approve and deny applications. It was created for FiveM a portuguese RP server => HargusRP (https://discord.gg/f6XPw72). 
+If you want you can change it and adapt it to do whatever you want with it.
 
 ### Prerequisites
 
-````
+```
 node.js
 discord
 token of a discord bot
