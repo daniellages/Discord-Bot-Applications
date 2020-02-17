@@ -4,7 +4,7 @@ This discord bot will allow you to approve and deny applications. It was created
 
 If you want you can change it and adapt it to do whatever you want with it.
 
-### Prerequisites
+## Prerequisites
 
 ```
 node.js
@@ -12,19 +12,35 @@ discord
 token of a discord bot
 ```
 
-### Installing
+## Installing
 
 For this bot to work you just need to add discord's bot token in the index.js - line 109, do the command ```npm install discord.js``` inside of the folder and start it with the command ```npm start``` in the terminal. 
 
-### Contributing
+## Starting
 
-- Feel free to contribute for this repository 
+Start with the command ```npm start``` inside of the folder.
 
-### Authors
+Then you need to invite the bot to your server and type either ```^denied``` or ```^approved```.
+
+And you are good to GO!
+
+## Expected Output
+
+Approved:
+https://imgur.com/a/UADn7ED
+
+Denied:
+https://imgur.com/a/un6xmu5
+
+## Contributing
+
+- Feel free to contribute for this repository.
+
+## Authors
 
 * **Daniel Lages** - [daniellages](https://github.com/daniellages)
 * **Luís Pinto** - [LiTO773](https://github.com/LiTO773)
 
-### License
+## License
 
-This project is licensed under the MIT License
+This project is licensed under the MIT License.
