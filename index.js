@@ -13,7 +13,7 @@ let writing = -1                                                // Array's posit
 // Change the outgoing messages as you wish, you can add more as well
 let category = ['Channel', 'Subject', 'Responsible', 'Message'] // Outgoing Messages 
 let arguments = []                                              // Array with the Inputs
-let rejected = false                                            // Rejected or Approved
+let denied = false                                            // denied or Approved
 
 client.on('ready', () => {
     client.user.setStatus('available')
@@ -33,8 +33,8 @@ client.on('message', msg => {
         msg.member.user.id === '236839966682906624' ||
         msg.member.user.id === '190884930551545856')
         ) {
-        if (msg.content === '^rejected' || msg.content === '^approved') { //To start the bot type ^rejected or ^approved
-            rejected = msg.content === '^rejected'
+        if (msg.content === '^denied' || msg.content === '^approved') { //To start the bot type ^denied or ^approved
+            denied = msg.content === '^denied'
             writing = 0
             msg.channel.send('> ' + category[writing] + ':')
         } else if (writing !== -1 && msg.content.toUpperCase() === 'CANCEL'){   //You can cancel the bot anytime by typing Cancel or cancel or even CaNcEl and so on...
@@ -60,19 +60,19 @@ client.on('message', msg => {
                 
                 // Message Content
                 const embed = {
-                    "title": rejected ? "Application Denied! ❌" : "Application Approved! ✔",  //title
-                    "color": rejected ? 15270441 : 2667619, //color
+                    "title": denied ? "Application Denied! ❌" : "Application Approved! ✔",  //title
+                    "color": denied ? 15270441 : 2667619, //color
                     "thumbnail": {
                         //images
-                        "url": rejected ? "https://w0.pngwave.com/png/490/44/denied-png-clip-art.png" : "https://lh3.googleusercontent.com/proxy/fZlHHWO7pPLcy4TboUAdge1rsgBtlILhSkQW9HM4zB7RKKxvE2A7hz4WYVmNaPFoe02LxFyAPXDpIcQWTY82AILzhTU47CD6yHpZ3Cwqh4JnEHLVpVtu5ZlBIEm3zUIKWA"
+                        "url": denied ? "https://w0.pngwave.com/png/490/44/denied-png-clip-art.png" : "https://copdnewstoday.com/wp-content/uploads/2020/01/shutterstock_570636568-1400x480@2x.jpg"
                     },
                     "fields": [
                     {
-                        "name": rejected ? "> Member Rejected:" : "> Member Approved:",
+                        "name": denied ? "> Member denied:" : "> Member Approved:",
                         "value": arguments[1]
                     },
                     {
-                        "name": rejected ? "> Rejected by:" : "> Approved by:",
+                        "name": denied ? "> denied by:" : "> Approved by:",
                         "value": arguments[2]
                     },
                     {
@@ -106,4 +106,4 @@ let validateContent = (index, content) => {
 }
 
 // Insert your discord bot TOKEN here!!!
-client.login('');
+client.login('Njc3NjMzNjUxMTAxNDAxMDkx.XkrMuA.p9pdm9hj9jbp0yYX22QYcolw7ig');
