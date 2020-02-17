@@ -13,7 +13,7 @@ token of a discord bot
 
 ### Installing
 
-For this bot to work you just need to add discord's bot token in the index.js - line 109 and start it with the command ```npm start``` in the terminal. 
+For this bot to work you just need to add discord's bot token in the index.js - line 109, do the command ```npm install discord.js``` inside of the folder and start it with the command ```npm start``` in the terminal. 
 
 ### Contributing
 
