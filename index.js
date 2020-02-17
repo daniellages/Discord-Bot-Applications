@@ -9,11 +9,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-let writing = -1                                               // Array's position (-1 means that he is doing nothing)
+let writing = -1                                                // Array's position (-1 means that he is doing nothing)
 // Change the outgoing messages as you wish, you can add more as well
-let category = ['Canal', 'Gajo', 'Cobarde', 'Mensagem']        // Outgoing Messages 
-let arguments = []                                             // Array with the Inputs
-let rejected = false                                           // Rejected or Approved
+let category = ['Channel', 'Subject', 'Responsible', 'Message'] // Outgoing Messages 
+let arguments = []                                              // Array with the Inputs
+let rejected = false                                            // Rejected or Approved
 
 client.on('ready', () => {
     client.user.setStatus('available')
